@@ -14,6 +14,8 @@ public class Indicator : MonoBehaviour {
 	public Vector3 OriginalPosition;
 
 	public float speed = 50;
+
+	public bool torch;
 	//public Vector3 m_camPos;
 
 	// Use this for initialization
@@ -22,8 +24,9 @@ public class Indicator : MonoBehaviour {
 
 		m_renderer = gameObject.GetComponentInChildren<SpriteRenderer> ();
 		indicatorOn = false;
-		fps = gameObject.GetComponent<FirstPersonController> ();
+		fps = GameObject.FindGameObjectWithTag ("Player").GetComponent<FirstPersonController> ();
 		inspecting = false;
+		torch = false;
 	
 	}
 	
@@ -46,8 +49,11 @@ public class Indicator : MonoBehaviour {
 				else if (inspecting == true) 
 				{
 					fps.yes = true;
-					gameObject.transform.position = OriginalPosition;
+					//gameObject.transform.position = OriginalPosition;
+					//gameObject.transform.eulerAngles = OriginalPosition;
 					inspecting = false;
+					torch = true;
+					Destroy(gameObject);
 				}
 				
 			}

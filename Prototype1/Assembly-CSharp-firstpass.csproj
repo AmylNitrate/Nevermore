@@ -66,6 +66,7 @@
      <Compile Include="Assets\Standard Assets\Scripts\PaintingPieces.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Switch.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Torch.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\endgame.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\iTween.cs" />
      <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />

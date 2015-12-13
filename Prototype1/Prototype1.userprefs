@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StartMenu\menu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\Door.cs">
     <Files>
-      <File FileName="Assets\StartMenu\menu.cs" Line="43" Column="42" />
-      <File FileName="Assets\Standard Assets\Scripts\endgame.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Scripts\Door.cs" Line="19" Column="3" />
+      <File FileName="Assets\Standard Assets\Scripts\Door.cs" Line="30" Column="7" />
+      <File FileName="Assets\Standard Assets\Scripts\Indicator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\Torch.cs" Line="21" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

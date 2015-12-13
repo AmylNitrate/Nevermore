@@ -7,6 +7,9 @@ public class Door : MonoBehaviour {
 	public iTween.EaseType curve;
 	public bool _doorReady;
 
+	//public AudioClip m_doorsound;
+	//public AudioSource audiosource;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -24,6 +27,7 @@ public class Door : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.O)) 
 			{
 				iTween.RotateTo(gameObject, iTween.Hash("rotation", new Vector3(0,100,0), "time", _speed, "easetype", curve));
+				//audiosource.clip = m_doorsound;
 			}
 			if (Input.GetKeyDown (KeyCode.P)) 
 			{
