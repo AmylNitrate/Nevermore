@@ -57,6 +57,7 @@
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CandleIndicator.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\HeadBob.cs" />
