@@ -47,9 +47,22 @@
   <ItemGroup>
      <Compile Include="Assets\StartMenu\Fading.cs" />
      <Compile Include="Assets\StartMenu\menu.cs" />
+     <Compile Include="Assets\_scripts\CandleIndicator.cs" />
+     <Compile Include="Assets\_scripts\Darkness.cs" />
+     <Compile Include="Assets\_scripts\Door.cs" />
+     <Compile Include="Assets\_scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\_scripts\HeadBob.cs" />
+     <Compile Include="Assets\_scripts\Indicator.cs" />
+     <Compile Include="Assets\_scripts\MouseLook.cs" />
+     <Compile Include="Assets\_scripts\PaintingChange.cs" />
+     <Compile Include="Assets\_scripts\PaintingPieces.cs" />
+     <Compile Include="Assets\_scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\_scripts\Switch.cs" />
      <Compile Include="Assets\_scripts\Text.cs" />
+     <Compile Include="Assets\_scripts\endgame.cs" />
      <Compile Include="Assets\_scripts\flyCam.cs" />
      <Compile Include="Assets\_scripts\flyCamLerp.cs" />
+     <Compile Include="Assets\_scripts\iTween.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
