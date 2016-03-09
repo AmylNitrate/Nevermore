@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour 
 {
@@ -40,7 +41,7 @@ public class menu : MonoBehaviour
 	public void StartLevel ()
 
 	{
-		Application.LoadLevel ("Prototype House");
+		SceneManager.LoadScene ("Prototype House");
 		//Fading.Instance.StartFade(SceneName);
 	}
 

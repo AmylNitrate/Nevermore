@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/MainGame.unity
+- path: Assets/_scenes/Prototype House.unity
   isLoaded: 1
   isActive: 1

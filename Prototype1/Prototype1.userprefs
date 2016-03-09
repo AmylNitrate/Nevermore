@@ -1,11 +1,12 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\CandleIndicator.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_scripts\Collectable.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\Scripts\CandleIndicator.cs" Line="52" Column="8" />
-      <File FileName="Assets\Standard Assets\Scripts\Indicator.cs" Line="62" Column="17" />
-      <File FileName="Assets\Standard Assets\Scripts\Door.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Scripts\Torch.cs" Line="1" Column="1" />
+      <File FileName="Assets\_scripts\Data.cs" Line="16" Column="3" />
+      <File FileName="Assets\_scripts\Candle.cs" Line="19" Column="2" />
+      <File FileName="Assets\_scripts\Collectable.cs" Line="13" Column="90" />
+      <File FileName="Assets\_scripts\Indicator.cs" Line="39" Column="64" />
+      <File FileName="Assets\_scripts\Darkness.cs" Line="32" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

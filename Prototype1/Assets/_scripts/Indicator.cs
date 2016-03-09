@@ -7,16 +7,9 @@ public class Indicator : MonoBehaviour {
 	public Sprite m_sprite;
 	public Sprite m_spriteNone;
 	public bool indicatorOn;
-
 	[SerializeField] public FirstPersonController fps;
-	public GameObject pocket;
 	public bool inspecting;
-	public Vector3 OriginalPosition;
-
-	public float speed = 50;
-
-	public bool torch;
-	//public Vector3 m_camPos;
+	public GameObject thisObject;
 
 	// Use this for initialization
 	void Start () 
@@ -26,7 +19,6 @@ public class Indicator : MonoBehaviour {
 		indicatorOn = false;
 		fps = GameObject.FindGameObjectWithTag ("Player").GetComponent<FirstPersonController> ();
 		inspecting = false;
-		torch = false;
 	
 	}
 	
@@ -37,38 +29,35 @@ public class Indicator : MonoBehaviour {
 		{
 			if (Input.GetButtonDown ("Space")) 
 			{
+
 				if (inspecting == false) 
 				{
-					fps.yes = false;
-					m_renderer.sprite = m_spriteNone;
-					OriginalPosition = gameObject.transform.position;
-					gameObject.transform.position = pocket.transform.position;
-					inspecting = true;
+					if (gameObject.tag.Equals ("Object")) 
+					{
+						fps.yes = false;
+						m_renderer.sprite = m_spriteNone;
+						gameObject.GetComponent<MeshRenderer> ().enabled = false;
+						thisObject.SetActive (true);
+						inspecting = true;
+					} 
+					else if (gameObject.tag.Equals ("Collectable")) 
+					{
+						thisObject.SetActive (true);
+						Destroy (gameObject);
+					} 
+
 					
-				}
+				} 
 				else if (inspecting == true) 
 				{
 					fps.yes = true;
-					//gameObject.transform.position = OriginalPosition;
-					//gameObject.transform.eulerAngles = OriginalPosition;
+					gameObject.GetComponent<MeshRenderer> ().enabled = true;
+					thisObject.SetActive (false);
 					inspecting = false;
-					torch = true;
-					Destroy(gameObject);
 				}
+
 				
 			}
-		}
-
-		if(inspecting)
-		{
-			if (Input.GetKey(KeyCode.A))
-				gameObject.transform.Rotate(Vector3.up * speed * Time.deltaTime);
-			if (Input.GetKey(KeyCode.D))
-				gameObject.transform.Rotate(-Vector3.up * speed * Time.deltaTime);
-			if (Input.GetKey(KeyCode.W))
-				gameObject.transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-			if (Input.GetKey(KeyCode.S))
-				gameObject.transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
 		}
 
 	

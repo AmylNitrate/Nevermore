@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Fading : MonoBehaviour 
 {
@@ -77,7 +78,7 @@ public class Fading : MonoBehaviour
             else
             {
                 b_DoFade = false;
-                Application.LoadLevel(SceneName);
+                SceneManager.LoadScene(SceneName);
             }
         }
     }
