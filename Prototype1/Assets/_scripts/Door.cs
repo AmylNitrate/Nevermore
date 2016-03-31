@@ -26,15 +26,10 @@ public class Door : MonoBehaviour {
 		{
 			
 			if (Input.GetKeyDown (KeyCode.O)) 
-			{
+			{																		//(0,0,0) to close
 				iTween.RotateTo (gameObject, iTween.Hash ("rotation", new Vector3 (0, 100, 0), "time", _speed, "easetype", curve));
 				//audiosource.clip = openDoor;
 			}
-
-//			if (Input.GetKeyDown (KeyCode.P)) 
-//			{
-//				iTween.RotateTo(gameObject, iTween.Hash("rotation", new Vector3(0,0,0), "time", _speed, "easetype", curve));
-//			}
 			
 		}
 		if (locked) {
@@ -42,8 +37,8 @@ public class Door : MonoBehaviour {
 				Debug.Log ("Door Locked");
 				//textRef1.text = "Door Locked";
 				//audiosource.clip = lockedDoor;
-				GameHandler.handler.FaxMachine();
-				triggerOne = true;
+				GameObject.Find("GameController").GetComponent<GameHandler>().FaxMachine();
+				//triggerOne = true;
 				locked = false;
 			}
 		}
