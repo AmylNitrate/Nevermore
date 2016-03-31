@@ -38,14 +38,16 @@ public enum PlayerState
 };
 
 [System.Serializable]
-public class GameControl
+public class GameController : MonoBehaviour
 {
 
     public GameState myGameState = GameState.None;
     public PlayerState myPlayerState = PlayerState.Passive;
 
+	public static GameController control;
 
-    // increases the stat with a given name by an ammount
+	public bool doorReady;
+
     public void SetCurrentGameState(GameState _gState)
     {
         myGameState = _gState;
@@ -64,22 +66,25 @@ public class GameControl
             case GameState.None:
 
                 //so far do nothing
+				
 
                 break;
-            case GameState.Start:
+            case GameState.Start://inside study with door locked and lights ON
 
                 //study lights ON
                 //door locked
+				
 
                 break;
-            case GameState.TriggerOne:
-
+            case GameState.TriggerOne://if tries to open study door
+			
                 //Audio(Fax Machine)
                 //Animation(Fax Machine)
                 //Activate GameObject(Fax Note(1))
+				
 
                 break;
-            case GameState.TriggerTwo:
+            case GameState.TriggerTwo://if inspect fax note 1
 
                 //Activate GameObjects(Mail in study)
                 //Audio(door open)
@@ -90,7 +95,7 @@ public class GameControl
                 //Upstairs lights OFF
 
                 break;
-            case GameState.TriggerThree:
+            case GameState.TriggerThree://if inspect cups, plant and plant book
 
                 //Audio(door open)
                 //Animation(open laundry door)
@@ -98,90 +103,90 @@ public class GameControl
                 //Laundry lights ON
 
                 break;
-            case GameState.TriggerFour:
+            case GameState.TriggerFour://if inspect mail in laundry
 
                 //Audio(Fax Machine)
                 //Animation(Fax Machine)
                 //Activate GameObject(Fax Note(2))
 
                 break;
-            case GameState.TriggerFive:
+            case GameState.TriggerFive://if open front door
 
                //Audio(transition to scene two)
                //SceneManager.LoadScene("SceneTwo"); 
 
                 break;
-            case GameState.TriggerSix:
+            case GameState.TriggerSix://if inspect family photo
 
                 //Activate GameObject(Torch)
 
                 break;
-            case GameState.TriggerSeven:
+            case GameState.TriggerSeven://if radio = off & inspect bills in study
 
                 //Audio.Stop(radio)
                 //Audio(door open)
                 //Animation(open front door)
 
                 break;
-            case GameState.TriggerEight:
+            case GameState.TriggerEight://if inspect lawn toy, bloodstain & driveway toy
 
                 //Audio(new atmosphere)
                 //Activate GameObjects(Newspaper + Mail)
 
                 break;
-            case GameState.TriggerNine:
+            case GameState.TriggerNine://if inspect newspaper & mail at front door
 
                 //Audio(Fax Machine)
                 //Animation(Fax Machine)
                 //Activate GameObject(Fax Note(3))
 
                 break;
-            case GameState.TriggerTen:
+            case GameState.TriggerTen://if inspect fax note 3
 
                 //Audio(portrait smash)
                 //Activate GameObject(fallen portrait)
 
                 break;
-            case GameState.TriggerEleven:
+            case GameState.TriggerEleven://if inspect portrait
 
                 //Audio(upstairs noise)
                 //Activate GameObject(Passport, Page from plants book)
 
                 break;
-            case GameState.TriggerTwelve:
+            case GameState.TriggerTwelve://if inspect passport & page from plant book
 
                 //lights ON in sisters room
-                //Activate GameObjects(sisters toys)
+                //Activate GameObjects(sisters toys + Journal)
 
                 break;
-            case GameState.TriggerThirteen:
+            case GameState.TriggerThirteen://if inspect sisters journal
 
                 //Audio(Fax Machine)
                 //Animation(Fax Machine)
                 //Activate GameObject(Fax Note(4))
 
                 break;
-            case GameState.TriggerFourteen:
+            case GameState.TriggerFourteen://if inspect fax note 4
 
                 //Audio(radio)
                 //Activate GameObjects(Glass Cups with Poison)
 
                 break;
-            case GameState.TriggerFifteen:
+            case GameState.TriggerFifteen://if player drinks poison
 
                 //Screen fade to black
                 //Audio(Phone Ringing)
                 //Screen fade in
 
                 break;
-            case GameState.TriggerSixteen:
+            case GameState.TriggerSixteen://if player picks up phone
 
                 //Audio(000Call)
                 //Screen fade to black
                 //GameOver
 
                 break;
-            case GameState.Restart:
+            case GameState.Restart://if lightOn = false
 
                 //Audio(gameOver)
                 //Screen fade to black
@@ -223,108 +228,4 @@ public class GameControl
     }
 
 };
-
-
-//Pseudocode
-
-/*  
-SCENE ONE
-
-    Start - inside study (door locked, lights on) //also make sure there is a portrait in hallway with only one sibling
-    Player - tries to open door = trigger fax machine
-    Fax Machine - activate note(1)
-    PickUp & Read Note - open study door & activate study gameObjects (mail)
-
-    lights on in lounge / lights off upstairs
-    (if player tried to go upstairs = game restart)
-
-    lounge room pick ups - books
-    dinning room pick ups - cups
-    kitchen pick ups - plants in window and book on plants on kitchen counter with riped out page
-
-    if(mail, books, cups & poison have been picked up)
-    {
-        laundry door opens
-    }
-
-    if(pick up mail in laundry)
-    {
-        trigger fax machine = activate note(2)
-    }
-
-    if(play exits front door)
-    {
-        load scene two
-    }
-
-SCENE TWO
-
-    Start - inside bedroom upstairs (door open, lights on)
-    (upstairs all lit / downstairs = lights off)
-
-    if(family photo has been picked up)
-    {
-        activate torch (therefore can go downstairs)
-    }
-
-    if(radio = on && pickup bill) //this is in the study
-    {
-        stop(radio)
-        open front door
-    }
-
-    if(lawn toy, bloodstain, driveway toy)
-    {
-        Activate newspaper + mail
-        Acivate dark house
-    }
-
-    if(read newspaper + mail)
-    {
-        trigger fax machine
-        activate note(3)
-    }
-
-
-    if(read note(3))
-    {
-        trigger portrait smash audio + gameObject
-    }
-
-    if(pick up portrait)
-    {
-        trigger audio(upstairs noise)
-    }
-
-    if(passports && riped out poisonous plant page)
-    {
-        trigger light in sisters room
-        activate objects in sisters room
-    }
-
-    if(toy in sisters room)
-    {
-        trigger fax machine audio
-        activate note(4)
-    }
-
-    if(note(4))
-    {
-        trigger radio audio
-        activate cups filled with poison
-    }
-
-    if(drink poison)
-    {
-        screne fade to black (player passes out)
-        phone rings
-        screne fade in
-    }
-
-    player crawls to phone
-    phone plays 000 call audio
-    screne fade to black
-    game over
-
-*/
 
