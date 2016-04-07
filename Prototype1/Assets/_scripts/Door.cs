@@ -7,8 +7,8 @@ public class Door : MonoBehaviour {
 	public float _speed;
 	public iTween.EaseType curve;
 	public bool _doorReady, triggerOne, locked;
-	//public Text textRef1;
 
+	Text textRef1;
 	//public AudioClip m_doorsound;
 	//public AudioSource audiosource;
 
@@ -17,27 +17,28 @@ public class Door : MonoBehaviour {
 	{
 		_doorReady = false;
 		_speed = 2f;
-		//textRef1 = GameObject.Find("Info").GetComponent<Text> ();
+		textRef1 = GameObject.Find ("Info").GetComponent<Text> ();
 	}
 
 	public void Update () 
 	{
+
 		if (_doorReady) 
 		{
-			
-			if (Input.GetKeyDown (KeyCode.O)) 
+			textRef1.text = "";
+			if (Input.GetKeyDown (KeyCode.Space)) 
 			{																		//(0,0,0) to close
 				iTween.RotateTo (gameObject, iTween.Hash ("rotation", new Vector3 (0, 100, 0), "time", _speed, "easetype", curve));
+
 				//audiosource.clip = openDoor;
 			}
 			
 		}
 		if (locked) {
-			if (Input.GetKeyDown (KeyCode.O)) {
-				Debug.Log ("Door Locked");
-				//textRef1.text = "Door Locked";
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				textRef1.text = "Door Locked";
 				//audiosource.clip = lockedDoor;
-				GameObject.Find("GameController").GetComponent<GameHandler>().FaxMachine();
+				GameObject.Find("GameController").GetComponent<GameHandler>().FaxMachineOne();
 				//triggerOne = true;
 				locked = false;
 			}

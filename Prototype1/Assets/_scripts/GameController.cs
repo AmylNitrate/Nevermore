@@ -30,34 +30,12 @@ public enum GameState
 };
 
 [System.Serializable]
-public enum PlayerState
-{
-    Passive,
-    Scared,
-    Darkness
-};
-
-[System.Serializable]
 public class GameController : MonoBehaviour
 {
 
     public GameState myGameState = GameState.None;
-    public PlayerState myPlayerState = PlayerState.Passive;
 
 	public static GameController control;
-
-	public bool doorReady;
-
-    public void SetCurrentGameState(GameState _gState)
-    {
-        myGameState = _gState;
-        ChangeGameState();
-    }
-    public void SetCurrentPlayerState(PlayerState _pState)
-    {
-        myPlayerState = _pState;
-        ChangePlayerStates();
-    }
 
     public void ChangeGameState()
     {
@@ -119,6 +97,7 @@ public class GameController : MonoBehaviour
             case GameState.TriggerSix://if inspect family photo
 
                 //Activate GameObject(Torch)
+				//Audio.Play(radio)
 
                 break;
             case GameState.TriggerSeven://if radio = off & inspect bills in study
@@ -196,36 +175,7 @@ public class GameController : MonoBehaviour
         }
         myGameState = GameState.None;
     }
-
-    public void ChangePlayerStates()
-    {
-
-        switch (myPlayerState)
-        {
-            case PlayerState.Passive:
-
-
-                break;
-            case PlayerState.Scared:
-
-
-                break;
-            case PlayerState.Darkness:
-
-
-                break;
-        }
-    }
-
-    //will probably put this in seperate scripts
-    public void SettingStates()
-    {
-        /*if ()
-        {
-            SetCurrentState(GameState.TriggerOne);
-        }
-        */
-    }
+		
 
 };
 

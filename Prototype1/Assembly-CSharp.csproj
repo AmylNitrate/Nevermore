@@ -61,8 +61,9 @@
      <Compile Include="Assets\_scripts\PaintingChange.cs" />
      <Compile Include="Assets\_scripts\PaintingPieces.cs" />
      <Compile Include="Assets\_scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\_scripts\StartText.cs" />
      <Compile Include="Assets\_scripts\Switch.cs" />
-     <Compile Include="Assets\_scripts\Text.cs" />
+     <Compile Include="Assets\_scripts\Trigger.cs" />
      <Compile Include="Assets\_scripts\endgame.cs" />
      <Compile Include="Assets\_scripts\flyCam.cs" />
      <Compile Include="Assets\_scripts\flyCamLerp.cs" />

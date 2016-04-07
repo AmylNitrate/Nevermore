@@ -7,7 +7,7 @@ public class Candle : MonoBehaviour
 	public Sprite m_sprite;
 	public Sprite m_spriteNone;
 	public bool indicatorOn;
-	public GameObject flames;
+	public GameObject flames, wic;
 
 	float timer;
 	// Use this for initialization
@@ -27,8 +27,9 @@ public class Candle : MonoBehaviour
 				if (Data.control.Matches > 0) {
 					Data.control.Matches--;
 					flames.SetActive (true);
+					wic.SetActive (true);
 					GameObject.FindGameObjectWithTag ("Player").GetComponent<Darkness> ().hasLight = true;
-					timer = 5;
+					timer = 10;
 				} else if (Data.control.Matches <= 0) {
 					Debug.Log ("NO MATCHES");
 				}
@@ -36,10 +37,10 @@ public class Candle : MonoBehaviour
 		}
 
 		timer -= Time.deltaTime;
-
 		if (timer <= 0) 
 		{
 			flames.SetActive (false);
+			wic.SetActive (false);
 			GameObject.FindGameObjectWithTag ("Player").GetComponent<Darkness> ().hasLight = false;
 		}
 	}
