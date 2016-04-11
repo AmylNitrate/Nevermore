@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: f372d7c9461db354896a99bebdc852b2
+timeCreated: 1460023770
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CZ_A4Paper01
+    100002: CZ_Desk01
+    100004: CZ_DiningChair01
+    100006: CZ_DiningChair02
+    100008: CZ_DiningChair03
+    100010: CZ_DiningChair04
+    100012: CZ_DiningChair05
+    100014: CZ_DiningChair06
+    100016: CZ_DiningChair07
+    100018: CZ_DiningTable01
+    100020: CZ_DiningTable02
+    100022: CZ_FaxMachine01
+    100024: CZ_GlassDoor02
+    100026: CZ_Phone01
+    100028: CZ_PhoneBase02
+    100030: CZ_PhoneHand01
+    100032: EH_ComputerMonitor02
+    100034: EH_mircowave
+    100036: EH_oven01
+    100038: Fax_Paper
+    100040: first_floor
+    100042: group
+    100044: group1
+    100046: group2
+    100048: group3
+    100050: //RootNode
+    100052: Neaurons
+    100054: office
+    100056: pCube24
+    100058: roof
+    100060: second_floor
+    400000: CZ_A4Paper01
+    400002: CZ_Desk01
+    400004: CZ_DiningChair01
+    400006: CZ_DiningChair02
+    400008: CZ_DiningChair03
+    400010: CZ_DiningChair04
+    400012: CZ_DiningChair05
+    400014: CZ_DiningChair06
+    400016: CZ_DiningChair07
+    400018: CZ_DiningTable01
+    400020: CZ_DiningTable02
+    400022: CZ_FaxMachine01
+    400024: CZ_GlassDoor02
+    400026: CZ_Phone01
+    400028: CZ_PhoneBase02
+    400030: CZ_PhoneHand01
+    400032: EH_ComputerMonitor02
+    400034: EH_mircowave
+    400036: EH_oven01
+    400038: Fax_Paper
+    400040: first_floor
+    400042: group
+    400044: group1
+    400046: group2
+    400048: group3
+    400050: //RootNode
+    400052: Neaurons
+    400054: office
+    400056: pCube24
+    400058: roof
+    400060: second_floor
+    2300000: CZ_A4Paper01
+    2300002: CZ_Desk01
+    2300004: CZ_DiningChair01
+    2300006: CZ_DiningChair02
+    2300008: CZ_DiningChair03
+    2300010: CZ_DiningChair04
+    2300012: CZ_DiningChair05
+    2300014: CZ_DiningChair06
+    2300016: CZ_DiningChair07
+    2300018: CZ_DiningTable01
+    2300020: CZ_DiningTable02
+    2300022: CZ_FaxMachine01
+    2300024: CZ_GlassDoor02
+    2300026: CZ_PhoneBase02
+    2300028: CZ_PhoneHand01
+    2300030: EH_ComputerMonitor02
+    2300032: EH_mircowave
+    2300034: EH_oven01
+    2300036: first_floor
+    2300038: pCube24
+    2300040: roof
+    2300042: second_floor
+    3300000: CZ_A4Paper01
+    3300002: CZ_Desk01
+    3300004: CZ_DiningChair01
+    3300006: CZ_DiningChair02
+    3300008: CZ_DiningChair03
+    3300010: CZ_DiningChair04
+    3300012: CZ_DiningChair05
+    3300014: CZ_DiningChair06
+    3300016: CZ_DiningChair07
+    3300018: CZ_DiningTable01
+    3300020: CZ_DiningTable02
+    3300022: CZ_FaxMachine01
+    3300024: CZ_GlassDoor02
+    3300026: CZ_PhoneBase02
+    3300028: CZ_PhoneHand01
+    3300030: EH_ComputerMonitor02
+    3300032: EH_mircowave
+    3300034: EH_oven01
+    3300036: first_floor
+    3300038: pCube24
+    3300040: roof
+    3300042: second_floor
+    4300000: CZ_DiningChair01
+    4300002: CZ_DiningTable01
+    4300004: CZ_Desk01
+    4300006: CZ_PhoneHand01
+    4300008: CZ_PhoneBase02
+    4300010: CZ_DiningChair02
+    4300012: CZ_DiningChair03
+    4300014: CZ_DiningChair04
+    4300016: CZ_DiningChair05
+    4300018: CZ_DiningChair06
+    4300020: CZ_DiningTable02
+    4300022: CZ_DiningChair07
+    4300024: CZ_GlassDoor02
+    4300026: CZ_FaxMachine01
+    4300028: CZ_A4Paper01
+    4300030: roof
+    4300032: second_floor
+    4300034: first_floor
+    4300036: EH_ComputerMonitor02
+    4300038: pCube24
+    4300040: EH_oven01
+    4300042: EH_mircowave
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
