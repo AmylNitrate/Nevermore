@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Assets house final/ss.unity
+- path: Assets/toy blocks/bkllk.unity
   isLoaded: 1
   isActive: 1
